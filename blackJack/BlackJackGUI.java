@@ -665,7 +665,7 @@ public class BlackJackGUI extends JFrame {
 	 * @param newBalance players new balance.
 	 */
 	static public void writeToFile(int newBalance) {
-		String fileName = "src/blackJack/balance.txt";
+		String fileName = "balance.txt";
 		try (PrintWriter writer = new PrintWriter(new File(fileName))) {
 			writer.println(newBalance);
 		} catch (FileNotFoundException e) {
